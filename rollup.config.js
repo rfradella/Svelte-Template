@@ -30,7 +30,9 @@ export default {
             "./builds/index.html"
         ]
     }),
-    svelte(),
+    svelte({
+        emitCss: false,
+      }),
     resolve(),    
     html({
         template,
